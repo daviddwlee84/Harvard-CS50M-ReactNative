@@ -33,6 +33,11 @@ function newTodo() {
 }
 
 function createTodo(contentText) {
+    const deleteButton = document.createElement('button')
+    deleteButton.innerHTML = 'X'
+    deleteButton.className = classNames.TODO_DELETE
+    deleteButton.onclick = removeTodo // The function will be invoke when press the button
+
     const checkbox = document.createElement('input')
     checkbox.className = classNames.TODO_CHECKBOX
     checkbox.type = 'checkbox' // Checkbox is just one type of input in HTML. 
@@ -41,10 +46,12 @@ function createTodo(contentText) {
     const span = document.createElement('span')
     span.className = classNames.TODO_TEXT
     span.textContent = contentText
-    span.contentEditable = true // span.setAttribute('contenteditable', 'true')
+    span.contentEditable = true // same as => span.setAttribute('contenteditable', 'true')
 
+    // The parenet of all three element above
     const li = document.createElement('li')
     li.className = classNames.TODO_ITEM
+    li.appendChild(deleteButton)
     li.appendChild(checkbox)
     li.appendChild(span)
 
@@ -55,4 +62,13 @@ function createTodo(contentText) {
 function checkboxListener() {
   if (this.checked) updateUncheckedCount(-1) // "this" here is the object which called it. i.e. checkbox
   else updateUncheckedCount(1)
+}
+
+function removeTodo() {
+  const todo = this.parentNode // this.parentNode is the "li" of the deleteButton
+  updateItemCount(-1)
+  if (!todo.children[1].checked) { // the second element of "li" is checkbox
+    updateUncheckedCount(-1) // update unchecked count only when it's unchecked
+  }
+  list.removeChild(todo) // Remove that todo
 }

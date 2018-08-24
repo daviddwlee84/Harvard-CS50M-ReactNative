@@ -19,10 +19,25 @@ Project 0|TODO App|[Ex1](https://github.com/GeekNabil/Todo-VanillaJS/blob/master
 
 ### Project 0
 
-* JavaScript innerHTML:
-	* HTMLDOMObject.innertHTML
-	* The Element property innerHTML gets or sets the HTML or XML markup contained within the element.
+* JavaScript Property
+	* innerHTML:
+		* HTMLDOMObject.innertHTML
+		* The Element property innerHTML gets or sets the HTML or XML markup contained within the element.
+	* children:
+		* It will return a "HTMLCollection" and it can be accessed like an array.
+		* [Best way to get child node -- Stackoverflow](https://stackoverflow.com/questions/10381296/best-way-to-get-child-nodes)
+	* parentNode:
+		* Return its parent node element
+	* appendChild
 
+* Delete Element
+	* Traditional way
+		* `element.parentNode.removeChild(element)`
+	* jQuery (DOM Library)
+		* `$('#some_element').remove()`
+		* [jQuery Remove Element](https://www.w3schools.com/jquery/jquery_dom_remove.asp)
+
+* console.log(Object) will show the object detail on browser's console. (If not familar with the object property it's a good way to find out)
 
 ## Links
 
