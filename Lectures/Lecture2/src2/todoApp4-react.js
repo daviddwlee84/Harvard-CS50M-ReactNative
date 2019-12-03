@@ -1,8 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom';
 
+// To give each Todo an unique ID
 let id = 0
 
+// React component <Todo />
+// the props.todo, props.onToggle and props.onDelete is passed from render()
 const Todo = props => (
   <li>
     <input type="checkbox" checked={props.todo.checked} onChange={props.onToggle} />
@@ -21,6 +24,7 @@ class App extends React.Component {
 
   addTodo() {
     const text = prompt("TODO text please!")
+    // ...array means pulls out all the values of the "array" (a fast way of cloning an array)
     this.setState({
       todos: [
         ...this.state.todos,

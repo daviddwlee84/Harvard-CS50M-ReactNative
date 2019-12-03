@@ -8,6 +8,8 @@ const uncheckedCountSpan = document.getElementById('unchecked-count')
 //    <span>text</span>
 //  </li>
 
+// Do in imperative manner....
+
 function newTodo() {
   // get text
   // create li

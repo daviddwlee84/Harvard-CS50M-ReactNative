@@ -1,4 +1,4 @@
-// store todos in memory
+// store todos in memory (instead of manipulate DOM)
 let todos = []
 
 function renderTodo(todo) {
@@ -12,7 +12,7 @@ function render() {
 
   // update counts
 
-  return false
+  return false // to disable automatic page refresh (a kind of a "event" handling)
 }
 
 function addTodo(name) {

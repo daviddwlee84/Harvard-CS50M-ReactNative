@@ -16,12 +16,24 @@ class App extends React.Component {
   }
 
   increaseCount() {
+    // This will only increase by 1, because setState() calls are batched and run asynchronously
+    // this.setState({count: this.count + 1})
+    // this.setState({count: this.count + 1})
+
+    // Use updater function instead
     this.setState(prevState => ({count: prevState.count + 1}))
     this.setState(prevState => ({count: prevState.count + 1}))
-    console.log(this.state.count)
+    console.log(this.state.count) // to prove asynchronous
   }
 
   render() {
+    // click the button then invode increaseCount()
+    // Bind "this"
+    // this.increaseCount.bind(this)
+    // or use arrow notation
+    // () => this.increaseCount()
+    // or define in the constructor
+    // ...
     return (
       <div style={styles}>
         <div>

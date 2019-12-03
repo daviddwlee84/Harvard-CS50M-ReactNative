@@ -64,3 +64,7 @@ Notes:
   * [Mobile50 Github](https://github.com/mobile50) - It will including your private project repository when you use *Github Classroom*. Just fork it to your account.
 * Others' Project
   * [dillon/cs50-mobile](https://github.com/dillon/cs50-mobile)
+
+### Tools
+
+* [CodeSandbox: Online Code Editor Tailored for Web Application Development](https://codesandbox.io/) - Test React in the sandbox

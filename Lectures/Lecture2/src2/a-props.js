@@ -13,6 +13,7 @@ const App = (props) => (
   </div>
 );
 
+// same as App but use different JS syntax
 const App2 = function(props) {
   return (
     <div style={styles}>
@@ -20,6 +21,7 @@ const App2 = function(props) {
     </div>
   )
 }
+
 let count = 0
 
 setInterval(

@@ -8,6 +8,8 @@ const uncheckedCountSpan = document.getElementById('unchecked-count')
 //    <span>text</span>
 //  </li>
 
+// Do in declarative manner....
+
 function createTodo() {
   // make li
 
