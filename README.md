@@ -4,11 +4,12 @@ Notes and practice projects about Mobile Application of Harvard University CS50 
 
 ## Lecture
 
-| Lecture                                                           | Title / Contents     | Materials                                                                | Project                                     |
-| ----------------------------------------------------------------- | -------------------- | ------------------------------------------------------------------------ | ------------------------------------------- |
-| [Lecture 0](https://video.cs50.net/mobile/2018/spring/lectures/0) | Overview, JavaScript | [slides](Lectures/Lecture0/lecture0.pdf), [code](Lectures/Lecture0/src0) | -                                           |
-| [Lecture 1](https://video.cs50.net/mobile/2018/spring/lectures/1) | JavaScript, ES6      | [slides](Lectures/Lecture1/lecture1.pdf), [code](Lectures/Lecture1/src1) | [Project 0 - TODO App](#project-0-todo-app) |
-| [Lecture 2](https://video.cs50.net/mobile/2018/spring/lectures/2) | React, Props, State  | [slides](Lectures/Lecture2/lecture2.pdf), [code](Lectures/Lecture2/src2) | -                                           |
+| Lecture                                                           | Title / Contents     | Materials                                                                | Project                                                 |
+| ----------------------------------------------------------------- | -------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------- |
+| [Lecture 0](https://video.cs50.net/mobile/2018/spring/lectures/0) | Overview, JavaScript | [slides](Lectures/Lecture0/lecture0.pdf), [code](Lectures/Lecture0/src0) | -                                                       |
+| [Lecture 1](https://video.cs50.net/mobile/2018/spring/lectures/1) | JavaScript, ES6      | [slides](Lectures/Lecture1/lecture1.pdf), [code](Lectures/Lecture1/src1) | [Project 0 - TODO App](#project-0-todo-app)             |
+| [Lecture 2](https://video.cs50.net/mobile/2018/spring/lectures/2) | React, Props, State  | [slides](Lectures/Lecture2/lecture2.pdf), [code](Lectures/Lecture2/src2) | -                                                       |
+| [Lecture 3](https://video.cs50.net/mobile/2018/spring/lectures/3) | React Native         | [slides](Lectures/Lecture3/lecture3.pdf), [code](Lectures/Lecture3/src3) | [Project 1 - Pomodoro Timer](#project-1-pomodoro-timer) |
 
 ## Projects
 
@@ -42,6 +43,10 @@ Notes:
 >
 > * [Ex1](https://github.com/GeekNabil/Todo-VanillaJS/blob/master/script.js)
 > * [Ex2](https://github.com/jhhayashi/react-native-course/tree/master/project0/solution)
+
+### Project 1: Pomodoro Timer
+
+* [Project 1](https://docs.cs50.net/mobile/2018/x/projects/1/project1.html)
 
 ## Links
 
