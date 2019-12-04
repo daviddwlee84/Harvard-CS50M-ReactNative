@@ -1,3 +1,4 @@
+// lecture3.pdf slide 15
 import React from 'react';
 import {View, Button, Text, StyleSheet} from 'react-native'
 
@@ -24,6 +25,11 @@ class Counter extends React.Component {
     this.interval = setInterval(this.inc, 1000)
   }
   
+  // If without this, the counter will still count in background
+  // (keep showing 'increment!')
+  // even if it is not shown on screen
+  // even worse, when toggle multiple counter, the old one still count
+  // may cause memory leak
   componentWillUnmount() {
     clearInterval(this.interval)
   }
@@ -50,6 +56,7 @@ export default class App extends React.Component {
     }
   }
   
+  // When press the Button, it will let counter disappear
   toggleCounter = () => this.setState(prevState => ({
     showCounter: !prevState.showCounter,
   }))

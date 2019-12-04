@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Text, ScrollView, StyleSheet } from 'react-native';
-import { Constants } from 'expo';
+import { Constants } from 'expo-constants';
 
 export default class App extends Component {
   state = {
@@ -20,6 +20,8 @@ export default class App extends Component {
     console.log('unblocked')
   }
 
+  // When the Button is clicked. It will block the JavaScript thread.
+  // Button is disappear but the ScrollView still work (maintain by the UI thread)
   render() {
     return (
       <ScrollView style={styles.container}>

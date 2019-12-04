@@ -1,6 +1,7 @@
+// Translated from the React version (Lectures/Lecture2/src/todoApp4-react.js)
 import React from 'react';
 import {View, Button, Text, ScrollView, StyleSheet, Switch} from 'react-native'
-import {Constants} from 'expo'
+import {Constants} from 'expo-constants'
 
 let id = 0
 
@@ -12,6 +13,7 @@ const styles = StyleSheet.create({
   appContainer: {
     paddingTop: Constants.statusBarHeight,
   },
+  // Let container (ScrollView (todo container) & View (app container)) fills up all possible space
   fill: {
     flex: 1,
   }

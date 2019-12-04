@@ -1,9 +1,11 @@
+// lecture3.pdf slide 14
 import React, { Component } from 'react';
 import { Text, View, StyleSheet } from 'react-native';
-import { Constants } from 'expo';
+import { Constants } from 'expo-constants';
 
 class OnlyUpdateOnEvens extends Component {
   shouldComponentUpdate(nextProps) {
+    // Skip all the odd numbers (when return false)
     return !(nextProps.count % 2)
   }
   
@@ -11,8 +13,9 @@ class OnlyUpdateOnEvens extends Component {
     console.log(this.props.count)
   }
   
+  // The counter will only count the even numbers
   render() {
-    return <Text>{this.props.count}</Text>
+    return <Text style={styles.count}>{this.props.count}</Text>
   }
 }
 
@@ -35,6 +38,7 @@ class Counter extends Component {
 }
 
 export default class App extends Component {
+  // Use our <Counter />
   render() {
     return (
       <View style={styles.container}>
@@ -52,4 +56,7 @@ const styles = StyleSheet.create({
     paddingTop: Constants.statusBarHeight,
     backgroundColor: '#ecf0f1',
   },
+  count: {
+    fontSize: 48,
+  }
 });

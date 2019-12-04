@@ -52,6 +52,7 @@ Notes:
 
 * [**Mobile App Development with React Native - Spring 2018**](https://cs50.github.io/mobile/) (link broken)
 * [edx - CS50's Mobile App Development with React Native](https://www.edx.org/course/cs50s-mobile-app-development-with-react-native)
+* [Youtube playlist](https://www.youtube.com/playlist?list=PLhQjrBD2T382gdfveyad09Ierl_3Jh_wR)
 
 > * [Harvard Extension Course](https://www.extension.harvard.edu/)
 >   * [Search result for CS50](https://www.extension.harvard.edu/course-catalog/courses?keyword=cs50)
@@ -67,4 +68,23 @@ Notes:
 
 ### Tools
 
-* [CodeSandbox: Online Code Editor Tailored for Web Application Development](https://codesandbox.io/) - Test React in the sandbox
+For React
+
+* [**CodeSandbox**: Online Code Editor Tailored for Web Application Development](https://codesandbox.io/) - Test React in the sandbox
+
+For React Native
+
+* [Expo](https://expo.io/) - Suite of tools to accelerate the React Native development - [Expo — Learn how | Getting Started](https://expo.io/learn)
+  * [Snack](https://snack.expo.io/) - Test React Native in the browser
+  * XDE
+
+### Documents
+
+* React Native
+  * [Components and APIs · React Native](https://facebook.github.io/react-native/docs/components-and-apis.html)
+* Expo
+  * [Constants - Expo Documentation](https://docs.expo.io/versions/latest/sdk/constants/)
+
+---
+
+> Copy a file's contents to clipboard: `cat file.js | pbcopy`

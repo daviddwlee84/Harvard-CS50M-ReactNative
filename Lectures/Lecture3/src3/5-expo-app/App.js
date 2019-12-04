@@ -1,13 +1,15 @@
+// lecture3.pdf slide 18
 import React, {Component} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import CustomCount from './Count.js'
+import CustomCount, { num } from './Count.js'
 
-export default class App extends React.Component {
+// We can use the React.Component or import and use it directly like this
+export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <CustomCount count={0} />
+        <CustomCount count={num} />
       </View>
     );
   }
