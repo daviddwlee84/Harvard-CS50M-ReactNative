@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "project1",
-    "description": "This project is really great.",
-    "slug": "project1",
+    "name": "Pomodoro Timer",
+    "description": "The project of Harvard CS50M project 1 - Pomodoro Timer",
+    "slug": "pomodoro-timer",
     "privacy": "public",
     "sdkVersion": "35.0.0",
     "platforms": [
@@ -18,7 +18,11 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cs50m.pomodoro"
+    },
+    "android": {
+      "package": "com.cs50m.pomodoro"
     }
   }
 }

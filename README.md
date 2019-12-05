@@ -17,6 +17,8 @@ Notes and practice projects about Mobile Application of Harvard University CS50 
 
 * [Project 0](https://docs.cs50.net/mobile/2018/x/projects/0/project0.html) ([backup](Projects/Project0.md), [Github Classroom Repository](https://github.com/mobile50/project0-daviddwlee84))
 
+> TODO: demo screenshot
+
 Notes:
 
 * JavaScript Property
@@ -48,6 +50,45 @@ Notes:
 
 * [Project 1](https://docs.cs50.net/mobile/2018/x/projects/1/project1.html)
 
+> TODO: demo screenshot
+
+```sh
+# install dependencies
+npm install
+
+# install expo cli tool
+npm install expo-cli --global
+
+# start debuging
+expo start
+```
+
+* Picker
+  * [Picker · React Native](https://facebook.github.io/react-native/docs/picker)
+  * [React Native - Picker - Tutorialspoint](https://www.tutorialspoint.com/react_native/react_native_picker.htm)
+  * [Understanding of How Picker works in React Native - About React](https://aboutreact.com/react-native-picker/)
+* [javascript - Understanding unique keys for array children in React.js - Stack Overflow](https://stackoverflow.com/questions/28329382/understanding-unique-keys-for-array-children-in-react-js)
+* [reactjs - React-Native Button style not work - Stack Overflow](https://stackoverflow.com/questions/43585297/react-native-button-style-not-work)
+* [react native - How to prevent layout from overlapping with iOS status bar - Stack Overflow](https://stackoverflow.com/questions/42599850/how-to-prevent-layout-from-overlapping-with-ios-status-bar)
+  * not sure why `Constants.statusBarHeight` still can't work even install [`expo-constants`](https://docs.expo.io/versions/latest/sdk/constants/)
+
+TODO:
+
+* [ ] Custom time setting
+
+> Example
+>
+> * Example
+>   * [Ex1](https://github.com/mohaned2014/Pomodoro-Timer-React-Native) - Highly inspired
+>     * [snack](https://snack.expo.io/@git/github.com/mohaned2014/Pomodoro-Timer-React-Native)
+>   * [Ex2](https://github.com/eemoir/Pomodoro-With-React-Native)
+>   * [Ex3](https://github.com/jonidelv/focustimeapp)
+> * Demos
+>   * [demo1](https://www.youtube.com/watch?v=9blGoGyKZPg)
+>   * [demo2](https://www.youtube.com/watch?v=tFRSpPtLwiM)
+> * Other
+>   * [App from Scratch: Building a Pomodoro Timer in React and Deploying it to Heroku - YouTube](https://www.youtube.com/watch?v=3gPbn5LaU_8)
+
 ## Links
 
 * [**Mobile App Development with React Native - Spring 2018**](https://cs50.github.io/mobile/) (link broken)
@@ -66,6 +107,13 @@ Notes:
 * Others' Project
   * [dillon/cs50-mobile](https://github.com/dillon/cs50-mobile)
 
+### Tutorial
+
+Flexbox
+
+* [React Native Tutorial 8: Stylesheets and Flexbox Layouts - YouTube](https://www.youtube.com/watch?v=JlDp07xuH1k)
+* [Aligning Children using Flexbox in React Native - Modus Create](https://moduscreate.com/blog/aligning-children-using-flexbox-in-react-native/)
+
 ### Tools
 
 For React
@@ -78,13 +126,35 @@ For React Native
   * [Snack](https://snack.expo.io/) - Test React Native in the browser
   * XDE
 
+### Third-party Components
+
+* [react-native-community/react-native-slider: React Native component used to select a single value from a range of values](https://github.com/react-native-community/react-native-slider)
+* [oblador/react-native-vector-icons: Customizable Icons for React Native with support for NavBar/TabBar/ToolbarAndroid, image source and full styling.](https://github.com/oblador/react-native-vector-icons)
+* [yamill/react-native-orientation: Listen to device orientation changes in react-native and set preferred orientation on screen to screen basis.](https://github.com/yamill/react-native-orientation)
+
 ### Documents
 
 * React Native
-  * [Components and APIs · React Native](https://facebook.github.io/react-native/docs/components-and-apis.html)
-* Expo
+  * [**Components and APIs · React Native**](https://facebook.github.io/react-native/docs/components-and-apis.html)
+  * [Layout with Flexbox · React Native](https://facebook.github.io/react-native/docs/flexbox)
+* Expo ([github](https://github.com/expo/expo))
   * [Constants - Expo Documentation](https://docs.expo.io/versions/latest/sdk/constants/)
+  * [Upgrading Expo SDK Walkthrough - Expo Documentation](https://docs.expo.io/versions/latest/workflow/upgrading-expo-sdk-walkthrough/)
+  * [Building Standalone Apps - Expo Documentation](https://docs.expo.io/versions/latest/distribution/building-standalone-apps/)
+* Babel
+  * [Config Files · Babel](https://babeljs.io/docs/en/config-files)
+  * [.babelrc · Babel](https://babeljs.io/docs/en/6.26.3/babelrc)
+* Flexbox
+  * Cheatsheet
+    * [Flexbox Cheatsheet](https://yoksel.github.io/flex-cheatsheet/)
+    * [FLEX: A simple visual cheatsheet for flexbox](http://flexbox.malven.co/)
 
 ---
 
-> Copy a file's contents to clipboard: `cat file.js | pbcopy`
+* Copy a file's contents to clipboard: `cat file.js | pbcopy`
+* Babel plugin problem
+  * [Build fails after eject: Cannot find module '@babel/plugin-transform-react-jsx' · Issue #6099 · facebook/create-react-app](https://github.com/facebook/create-react-app/issues/6099)
+    * `rm -rf node_modules && yarn`
+  * [babel-plugin-transform-react-jsx-source - npm](https://www.npmjs.com/package/babel-plugin-transform-react-jsx-source)
+    * `npm install --save-dev babel-plugin-transform-react-jsx-source`
+  * [App.js: Cannot read property 'filename' of undefined after update sdk to 31.0.0 · Issue #2576 · expo/expo](https://github.com/expo/expo/issues/2576)
