@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, TouchableOpacity, Text, View } from 'react-native';
+import PropTypes from 'prop-types'
 
 /**
  * A stateless component that maintain the layout of buttons in different state (running, pause)
@@ -24,6 +25,13 @@ const TimerButtons = (props) => (
     </TouchableOpacity>
   </View>
 );
+
+TimerButtons.propTypes = {
+  running: PropTypes.bool.isRequired,
+  playClicked: PropTypes.func.isRequired,
+  pauseClicked: PropTypes.func.isRequired,
+  resetClicked: PropTypes.func.isRequired,
+}
 
 export default TimerButtons;
 

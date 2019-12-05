@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text } from 'react-native';
+import PropTypes from 'prop-types';
 
 /**
  * A stateless component that display the text of the current state
@@ -37,6 +38,11 @@ const TimerHeader = (props) => (
     {handleText(props)}
   </Text>
 );
+
+TimerHeader.propTypes = {
+  running: PropTypes.bool.isRequired,
+  intervalType: PropTypes.string.isRequired,
+}
 
 export default TimerHeader;
 

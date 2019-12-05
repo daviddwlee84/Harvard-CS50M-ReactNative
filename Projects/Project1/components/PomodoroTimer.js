@@ -35,11 +35,27 @@ export default class PomodoroTimer extends Component {
     }
   }
 
+  updatePeriod = (newPeriod) => {
+    // When the time is edited, it will call this to update the current periods
+    if (this.state.intervalType == 'focus') {
+      this.FOCUS_PERIOD = newPeriod;
+      this.setState({
+        period: this.FOCUS_PERIOD
+      });
+    } else {
+      this.REST_PERIOD = newPeriod;
+      this.setState({
+        period: this.REST_PERIOD
+      });
+    }
+  }
+
   render() {
     return (
       <Timer
         intervalType={this.state.intervalType}
         onComplete={this.handleTimerCompleted}
+        onChange={this.updatePeriod}
         totalSeconds={this.state.period}
       />
     );
