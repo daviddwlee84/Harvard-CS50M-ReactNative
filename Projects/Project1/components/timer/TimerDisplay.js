@@ -71,7 +71,7 @@ export default class TimerDisplay extends Component {
           multiline={false}
           editable={!this.props.running}
           value={this.state.min} />
-        <Text style={styles.text}>:</Text>
+        <Text style={[styles.text, styles.semicolon]}>:</Text>
         <TextInput
           style={styles.text}
           defaultValue={getSecString(this.props.time)}
@@ -102,5 +102,8 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 50,
     fontWeight: '400',
+  },
+  semicolon: {
+    alignSelf: 'baseline',
   }
 });
