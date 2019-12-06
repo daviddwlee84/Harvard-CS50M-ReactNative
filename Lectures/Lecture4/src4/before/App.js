@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button, ScrollView, StyleSheet, Text, View } from 'react-native';
-import {Constants} from 'expo'
+import { Constants } from 'expo'
 
-import contacts from './contacts'
+import contacts from './contacts' // just an array of contacts
 
 export default class App extends React.Component {
   state = {

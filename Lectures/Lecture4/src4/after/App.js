@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button, FlatList, ScrollView, StyleSheet, Text, View } from 'react-native';
-import {Constants} from 'expo'
+import { Constants } from 'expo'
 
-import contacts, {compareNames} from './contacts'
+import contacts, { compareNames } from './contacts'
 import ScrollViewContacts from './ScrollViewContacts'
 import FlatListContacts from './FlatListContacts'
 import SectionListContacts from './SectionListContacts'
@@ -19,8 +19,13 @@ export default class App extends React.Component {
     this.setState(prevState => ({showContacts: !prevState.showContacts}))
   }
 
+  // This is unused in the end
   sort = () => {
+    // sort is a built-in function of every JS array, we can pass a function
     this.setState(prevState => ({contacts: prevState.contacts.sort(compareNames)}))
+    // to force "creating" new array => to cause "immutability"
+    // so that the FlatList will notice the array is changed
+    // this.setState(prevState => ({contacts: [...prevState.contacts].sort(compareNames)}))
   }
 
   showForm = () => {
@@ -36,6 +41,10 @@ export default class App extends React.Component {
         {this.state.showContacts && <SectionListContacts contacts={this.state.contacts} />}
       </View>
     );
+    // or we can also do something like this
+    // {this.state.showContacts ? <ContactsComponent /> : null}
+    // or just use && like that (if first thing is true then return next; or just return false)
+    // null and false in react rendering are the same
   }
 }
 
