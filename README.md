@@ -145,6 +145,7 @@ For React Native
 * Expo ([github](https://github.com/expo/expo))
   * [Constants - Expo Documentation](https://docs.expo.io/versions/latest/sdk/constants/)
   * [Upgrading Expo SDK Walkthrough - Expo Documentation](https://docs.expo.io/versions/latest/workflow/upgrading-expo-sdk-walkthrough/)
+    * `expo update 35.0.0` (2019/12)
   * [Building Standalone Apps - Expo Documentation](https://docs.expo.io/versions/latest/distribution/building-standalone-apps/)
     * `expo login`
     * `expo build:android -t apk`
